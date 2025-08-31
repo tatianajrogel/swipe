@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Search, Menu, X } from "lucide-react"; // icons
+import logo from "./../../assets/images/logo.png"
+import backgroundImage from "../../assets/images/background-image.png"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,14 +15,15 @@ const Navbar = () => {
   const inactiveClasses = "text-[#121926] hover:text-[#E11D48]";
 
   return (
-    <header className="p-5 fixed top-0 right-0 z-50 left-0 ">
+    <header className="p-5 fixed top-0 right-0 z-50 left-0 bg-cover bg-center bg-no-repeat "
+ >
       {/* Navbar */}
-      <nav className="bg-gray-100   rounded-xl shadow-lg md:shadow-md p-4">
+      <nav className="bg-white rounded-xl shadow-lg md:shadow-md p-4">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-bold">
-              logo{" "}
+            <span className="text-2xl font-bold flex items-center gap-2">
+              <img src={logo} alt="" />
               <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">
                 DoTheySwipe
               </span>

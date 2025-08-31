@@ -7,10 +7,14 @@ import Search from "./pages/Search";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ContactUs from "./pages/ContactUs";
 import Footer from "./components/footer/Footer";
+import backgroundImage from "./assets/images/background-image.png"
+
 
 function App() {
   return (
-    <>
+    <div className="bg-cover bg-center bg-no-repeat"
+      
+      >
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,10 +22,10 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/search" element={<Search />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer/>
-    </>
+    </div>
   );
 }
 

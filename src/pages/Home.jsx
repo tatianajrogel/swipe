@@ -11,7 +11,7 @@ import Testimonials from '../components/home/Testimonial';
 
 const Home = () => {
  return (
-    <div className="bg-white">
+    <div className="">
       <Hero />
       <HowItWorks/>
       <FastAndAccurate/>
