@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import SocialIcon from "./SocialIcon";
-import logo from "./../../assets/images/logo.png"
 
   const socialLinks = [
     { href: "https://facebook.com/", label: "Facebook", Icon: Facebook, color: "text-blue-600" },
@@ -12,14 +11,13 @@ import logo from "./../../assets/images/logo.png"
 
 const Footer = () => {
   return (
-    <footer className="text-black pb-10 px-4 ">
-      <div className="max-w-6xl rounded-xl px-4 bg-gray-100 pt-16 pb-6 shadow-md mx-auto">
+    <footer className="text-black pb-10 px-4">
+      <div className="max-w-6xl rounded-xl px-4 bg-gray-100 pt-16 pb-6 mx-auto">
         {/* Logo and Navigation */}
         <div className="flex flex-col justify-center items-center mb-8">
-         
+          {/* Logo */}
           <div className="mb-6">
-            <NavLink to="/" className="text-2xl md:text-5xl font-bold flex items-center gap-2">
-            <img src={logo} alt="" className="w-10" />
+            <NavLink to="/" className="text-2xl md:text-5xl font-bold">
               <span className="bg-gradient-to-r from-[#E11D48] to-[#A51CA9] bg-clip-text text-transparent">
                 DoTheySwipe
               </span>
@@ -61,7 +59,7 @@ const Footer = () => {
               FAQ's
             </NavLink>
 <NavLink
-              to="/PrivacyPolicy"
+              to="/faqs"
               className={({ isActive }) =>
                 `hover:text-[#E11D48] transition-colors ${
                   isActive ? "text-[#E11D48]" : "text-slate-950"
@@ -72,7 +70,7 @@ const Footer = () => {
             </NavLink>
 
            <NavLink
-              to="/contact"
+              to="/faqs"
               className={({ isActive }) =>
                 `hover:text-[#E11D48] transition-colors ${
                   isActive ? "text-[#E11D48]" : "text-slate-950"

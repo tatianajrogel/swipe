@@ -15,10 +15,10 @@ const Navbar = () => {
   const inactiveClasses = "text-[#121926] hover:text-[#E11D48]";
 
   return (
-    <header className="p-5 fixed top-0 right-0 z-50 left-0 bg-cover bg-center bg-no-repeat "
+    <header className="px-2 p-5 md:px-5  fixed top-0 right-0 z-50 left-0 bg-cover shadow-md md:shadow-none bg-white md:bg-transparent"
  >
       {/* Navbar */}
-      <nav className="bg-white rounded-xl shadow-lg md:shadow-md p-4">
+      <nav className="bg-white rounded-xl md:shadow-md p-4">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
