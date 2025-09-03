@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
      
       {/* <Location/> */}
       {/* <Profile/> */}
-      <ProfileDetail/>
+      {/* <ProfileDetail/> */}
 
       
     </div>
