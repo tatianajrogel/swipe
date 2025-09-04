@@ -32,12 +32,13 @@ const toggleMenu = () => {
   
 
 
-    <header className=" md:p-5 md:px-5 fixed top-0 right-0 z-50 left-0 bg-cover shadow-md md:shadow-none bg-slate-100 md:bg-transparent">
+    <header className=" md:p-5 md:px-5 fixed top-0 right-0 z-50 left-0 bg-cover shadow-sm md:shadow-none  md:bg-transparent">
   {/* Navbar */}
-  <nav className="md:bg-white rounded-xl md:shadow-md p-4 relative z-50">
-    <div className="container mx-auto flex justify-between items-center">
+  <nav className="bg-slate-100 md:bg-white md:rounded-xl  shadow-md pt-4 md:p-4 relative z-50">
+   <div className="">
+ <div className="container mx-auto flex justify-between  items-center">
       {/* Logo */}
-      <div className="flex items-center">
+      <div className="flex items-center pl-4 md:pl-0 ">
         <span className="text-2xl font-bold flex items-center gap-2">
           <img src={logo} className="w-8 lg:w-9" alt="" />
           <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">
@@ -94,7 +95,7 @@ const toggleMenu = () => {
       </div>
 
       {/* Mobile Menu + Search */}
-      <div className="flex items-center space-x-4 md:hidden">
+      <div className="flex items-center space-x-4 pr-9 md:pr-0  md:hidden">
         <button aria-label="Search" className="text-xl">
           <Search size={24} className="text-[#121926]" />
         </button>
@@ -109,16 +110,15 @@ const toggleMenu = () => {
         </button>
       </div>
     </div>
-
-    {/* Mobile Navigation */}
+     {/* Mobile Navigation */}
     <div
-      className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
+      className={`md:hidden overflow-hidden bg-white mt-4 border border-gray-300 transition-all duration-500 ease-in-out ${
         isMenuOpen ? "max-h-96 opacity-100 mt-4 pt-4" : "max-h-0 opacity-0"
       }`}
     >
-      <div className="flex flex-col space-y-4 relative z-50">
+      <div className="flex flex-col space-y-4 px-4  relative ">
         {/* ...Mobile NavLinks*/}
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col mb-4 space-y-4">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -170,12 +170,15 @@ const toggleMenu = () => {
           </div>
       </div>
     </div>
+   </div>
+   
+   
   </nav>
 
   {/* Overlay (only mobile) */}
   {isMenuOpen && (
     <div
-      className="fixed inset-0 bg-slate-900/60  backdrop-blur-sm z-40"
+      className="fixed inset-0 bg-slate-900/60  backdrop-blur-sm "
       onClick={() => setIsMenuOpen(false)} 
     ></div>
   )}

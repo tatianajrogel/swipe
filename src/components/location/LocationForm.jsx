@@ -11,9 +11,7 @@ const LocationForm = ({layout}) => {
     
     <div className={`grid grid-cols-1 px-8 gap-8 px-auto`}>
         {/* Left Side */}
-      
          <div className="space-y-6">
-      {/* Search Input Section */}
       {/* <div className="space-y-6 py-8  md:py-4 lg:py-8"> */}
       <div className="mb-8 md:mb-4 lg:mb-8">
         <h1 className="text-2xl lg:text-3xl mt-8 font-bold text-gray-800 mb-4">
