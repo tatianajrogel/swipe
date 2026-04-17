@@ -1,4 +1,4 @@
-import girl from "./../../assets/images/girlImage.jfif"
+import girl from "../../assets/images/girlImage.jfif"
 const CTASection = () => {
   return (
     <section className="w-full  py-16 px-4">

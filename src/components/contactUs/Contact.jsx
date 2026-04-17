@@ -1,6 +1,5 @@
-import youngCouple from "./../../assets/images/young-couple.png"
-import vector from "./../../assets/images/vector.png"
-import backgroundImage from "../../assets/images/background-image.png"
+import youngCouple from "../../assets/images/young-couple.png"
+import vector from "../../assets/images/Vector.png"
 const Contact = () => {
   return (
     <section className="py-16 mt-8 md:mt-20 mx-auto px-4 flex justify-center bg-cover bg-center "
@@ -32,7 +31,7 @@ const Contact = () => {
             </div>
            
 
-            <img src={youngCouple} alt="" className=" object-cover w-full h-auto" />
+            <img src={youngCouple} alt="Happy couple" className=" object-cover w-full h-auto" />
              </div>
           </div>
 
@@ -69,7 +68,7 @@ const Contact = () => {
                 </label>
                 <input
 
-                  type="text"
+                  type="email"
                   id="email"
                   required
                   placeholder="your@email.com"
