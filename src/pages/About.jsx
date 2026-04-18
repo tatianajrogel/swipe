@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionWrapper from '../components/search/SectionWrapper'
+import SectionWrapper from '../components/shared/SectionWrapper'
 import SearchForm from '../components/search/SearchForm'
 
 const About = () => {

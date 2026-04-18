@@ -1,4 +1,4 @@
-import SectionWrapper from '../components/search/SectionWrapper'
+import SectionWrapper from '../components/shared/SectionWrapper'
 import Profiles from '../components/profile/Profiles'
 
 

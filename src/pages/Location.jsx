@@ -1,6 +1,6 @@
 import React from 'react'
 import LocationForm from "../components/location/LocationForm.jsx"
-import SectionWrapper from '../components/search/SectionWrapper.jsx'
+import SectionWrapper from '../components/shared/SectionWrapper.jsx'
 
 
 const Location = () => {

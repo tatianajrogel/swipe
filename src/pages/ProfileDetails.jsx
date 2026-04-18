@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionWrapper from '../components/search/SectionWrapper.jsx'
+import SectionWrapper from '../components/shared/SectionWrapper.jsx'
 import ProfileDetail from '../components/profileDetail/ProfileDetail.jsx'
 import profile1 from '../assets/images/profile1.png'
 import profile2 from '../assets/images/profile2.png'
