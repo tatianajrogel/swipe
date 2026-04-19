@@ -1,30 +1,7 @@
-import PricingCard from "./pricingCard";
-const Pricing = () => {
-  const plans = [
-    {
-      title: "Single Search",
-      price: "29",
-      features: [
-        "Search for one profile.",
-        "Basic profile details only (name, location).",
-        "Limited to one search per week."
-      ],
-      isPopular: false
-    },
-    {
-      title: "Recurring search",
-      price: "79",
-      features: [
-        "Search for unlimited profiles.",
-        "Full profile details, including photos.",
-        "Match accuracy report.",
-        "Premium email support.",
-        "1-on-1 Support (via live chat)"
-      ],
-      isPopular: true
-    }
-  ];
+import PricingCard from "./PricingCard";
+import { pricingPlans } from "../../data/pricingData";
 
+const Pricing = () => {
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-indigo-100 to-purple-50">
       <div className="max-w-6xl container mx-auto mb-6 ">
@@ -34,11 +11,11 @@ const Pricing = () => {
         <p className="text-xl  text-gray-700 mb-8 max-w-2xl">
           Discover the perfect search package for your needs on "Dotheyswipe."
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8  mx-auto">
-          {plans.map((plan, index) => (
+          {pricingPlans.map((plan) => (
             <PricingCard
-              key={index}
+              key={plan.id}
               title={plan.title}
               price={plan.price}
               features={plan.features}
