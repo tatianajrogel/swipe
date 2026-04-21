@@ -1,5 +1,5 @@
 // TestimonialCard Component
-const TestimonialCard = ({ name, rating, text, role }) => {
+const TestimonialCard = ({ name, text, role }) => {
   return (
     <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
       {/* Rating Stars */}
