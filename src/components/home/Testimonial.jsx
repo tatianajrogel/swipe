@@ -6,7 +6,7 @@ const Testimonial = () => {
         {/* Section Header */}
         <div className="max-w-2/3 mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            See What Users <br/> <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">Think of Dotheyswipe®</span>
+            See What Users <br/> <span className="text-gradient-brand">Think of Dotheyswipe®</span>
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Do They Swipe is a platform designed to help individuals discreetly and anonymously check if their partners or others they know are actively using dating apps.
@@ -22,11 +22,11 @@ const Testimonial = () => {
           
           {/* Rating Stars */}
           <div className="flex justify-center mb-3">
-            <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent text-xl mr-1">✰</span>
-            <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent text-xl mr-1">✰</span>
-            <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent text-xl mr-1">✰</span>
-            <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent text-xl mr-1">✰</span>
-            <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent text-xl">✰</span>
+            <span className="text-gradient-brand text-xl mr-1">✰</span>
+            <span className="text-gradient-brand text-xl mr-1">✰</span>
+            <span className="text-gradient-brand text-xl mr-1">✰</span>
+            <span className="text-gradient-brand text-xl mr-1">✰</span>
+            <span className="text-gradient-brand text-xl">✰</span>
           </div>
           
           {/* User Name */}

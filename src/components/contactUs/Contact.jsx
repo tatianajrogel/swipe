@@ -12,9 +12,9 @@ const Contact = () => {
         >
           
           {/* Left Side - Contact Info */}
-          <div className="flex flex-col order-2 md:order-1 text-white bg-cover bg-center rounded-2xl lg:text-left bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] "
+          <div className="flex flex-col order-2 md:order-1 text-white bg-cover bg-center rounded-2xl lg:text-left bg-gradient-brand "
           
-              style={{backgroundImage:`linear-gradient(to right,#E11D48,#CC1D6B,#B81C8B,#A51CA9),url(${vector})`}}
+              style={{backgroundImage:`linear-gradient(to right,var(--color-brand),var(--color-brand-mid1),var(--color-brand-mid2),var(--color-brand-end)),url(${vector})`}}
           >
             
             <div className="" 
@@ -39,7 +39,7 @@ const Contact = () => {
           <div className="flex flex-col order-1 md:order-2 gap-6 rounded-2xl p-8  bg-white shadow-md">
             <div className="">
                  <h3 className="text-4xl font-bold text-slate-900 mb-3">
-              Get in <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">touch</span>
+              Get in <span className="text-gradient-brand">touch</span>
             </h3>
             <p className="text-lg text-slate-900">
               Our friendly team would love to hear from you.
@@ -49,7 +49,7 @@ const Contact = () => {
               {/* First Name */}
               <div className="flex flex-col ">
                 <label htmlFor="firstName"  className="block text-lg font-medium text-gray-700 mb-2">
-                  First name<span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">*</span> 
+                  First name<span className="text-gradient-brand">*</span> 
                 </label>
                 <input
 
@@ -57,14 +57,14 @@ const Contact = () => {
                   id="firstName"
                   required
                   placeholder="First Name"
-                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring focus:ring-[#E11D48] focus:outline-none"
+                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring focus:ring-brand focus:outline-none"
                 />
               </div>
 
               {/* Email */}
                <div className="flex flex-col ">
                 <label htmlFor="email"  className="block text-lg font-medium text-gray-700 mb-2">
-                  Email<span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">*</span> 
+                  Email<span className="text-gradient-brand">*</span> 
                 </label>
                 <input
 
@@ -72,14 +72,14 @@ const Contact = () => {
                   id="email"
                   required
                   placeholder="your@email.com"
-                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring focus:ring-[#E11D48] focus:outline-none"
+                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring focus:ring-brand focus:outline-none"
                 />
               </div>
 
               {/* Phone Number */}
                <div className="flex flex-col ">
                 <label htmlFor="phoneNo"  className="block text-lg font-medium text-gray-700 mb-2">
-                  Phone Number<span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">*</span> 
+                  Phone Number<span className="text-gradient-brand">*</span> 
                 </label>
                 <input
 
@@ -87,19 +87,19 @@ const Contact = () => {
                   id="phoneNo"
                   required
                   placeholder="+1 (555) 000-000"
-                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring focus:ring-[#E11D48] focus:outline-none"
+                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring focus:ring-brand focus:outline-none"
                 />
               </div>
 
               {/* Message */}
               <div className="flex flex-col ">
                 <label htmlFor="message"  className="block text-lg font-medium text-gray-700 mb-2">
-                  Message<span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">*</span> 
+                  Message<span className="text-gradient-brand">*</span> 
                 </label>
                 <textarea
                   required
                   rows="4"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E11D48] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
                   placeholder="Leave us a message..."
                 ></textarea>
               </div>
@@ -107,7 +107,7 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)]  text-white py-3 px-6 rounded-full font-semibold hover:bg-[#CC1D6B] transition-colors duration-300"
+                className="w-full bg-gradient-brand  text-white py-3 px-6 rounded-full font-semibold hover:bg-brand-mid1 transition-colors duration-300"
               >
                 Submit
               </button>

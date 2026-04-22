@@ -2,7 +2,7 @@ import girl from "../../assets/images/girlImage.jfif"
 const CTASection = () => {
   return (
     <section className="w-full  py-16 px-4">
-      <div className="max-w-6xl mx-auto px-8 rounded-xl bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-6xl mx-auto px-8 rounded-xl bg-gradient-brand flex flex-col md:flex-row items-center justify-between">
         {/* Text Content - Left Side */}
         <div className="md:w-2/3 py-16 text-center md:text-left mb-10 md:mb-0">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -23,10 +23,10 @@ const CTASection = () => {
 >
   <defs>
     <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stopColor="#E11D48" />
-      <stop offset="33%" stopColor="#CC1D6B" />
-      <stop offset="66%" stopColor="#B81C8B" />
-      <stop offset="100%" stopColor="#A51CA9" />
+      <stop offset="0%"   stopColor="var(--color-brand)" />
+      <stop offset="33%"  stopColor="var(--color-brand-mid1)" />
+      <stop offset="66%"  stopColor="var(--color-brand-mid2)" />
+      <stop offset="100%" stopColor="var(--color-brand-end)" />
     </linearGradient>
   </defs>
   <path
@@ -36,7 +36,7 @@ const CTASection = () => {
   />
 </svg>
 
-                 <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">Search on Tinder</span>
+                 <span className="text-gradient-brand">Search on Tinder</span>
               </button>
             </div>
    

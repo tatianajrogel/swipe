@@ -9,7 +9,7 @@ const Hero = () => {
         {/* Left Column - Content */}
         <div className="text-center px-4 md:px-0 md:text-left">
           <h1 className="text-4xl md:text-2xl lg:text-5xl  font-bold text-slate/950 mb-6">
-            <span className="text-[#E11D48]">Find out </span> if they are secretly on image Tinder
+            <span className="text-brand">Find out </span> if they are secretly on image Tinder
           </h1>
 
           <div className="mb-8">
@@ -25,7 +25,7 @@ const Hero = () => {
             <Link
             to='/about'
             >
-            <button className="px-8 py-4 bg-gradient-to-r from-[#E11D48] to-[#A51CA9] text-white rounded-full font-semibold flex items-center justify-center gap-2 transition-transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <button className="px-8 py-4 bg-gradient-to-r from-brand to-brand-end text-white rounded-full font-semibold flex items-center justify-center gap-2 transition-transform hover:scale-105 shadow-lg hover:shadow-xl">
               Search on Tinder <ChevronRight size={20} />
             </button>
             </Link>

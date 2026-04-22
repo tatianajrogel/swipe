@@ -10,7 +10,7 @@ import vector from "../../assets/images/Vector.png"
 
 const SectionHeader = ({ title, description, children }) => {
   return (
-    <div className="hidden relative w-full h-80 bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] rounded-2xl overflow-hidden md:flex  justify-center py-16 px-8">
+    <div className="hidden relative w-full h-80 bg-gradient-brand rounded-2xl overflow-hidden md:flex  justify-center py-16 px-8">
       {/* Background pattern/vector */}
       <div className="absolute inset-0 bg-center"
         style={{backgroundImage:`url(${vector})`}}

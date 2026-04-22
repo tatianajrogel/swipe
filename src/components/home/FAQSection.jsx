@@ -8,7 +8,7 @@ const FAQSection = () => {
         <div className="flex flex-col lg:flex-row justify-between items-scenter  mb-16">
          <div>
              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Frequently <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">Asked Questions.</span>
+            Frequently <span className="text-gradient-brand">Asked Questions.</span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Answers to Common Questions About "DoTheySwipe"

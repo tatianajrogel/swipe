@@ -13,7 +13,7 @@ const LocationForm = () => {
       {/* <div className="space-y-6 py-8  md:py-4 lg:py-8"> */}
       <div className="mb-8 md:mb-4 lg:mb-8">
         <h1 className="text-2xl lg:text-3xl mt-8 font-bold text-gray-800 mb-4">
-          Where <span className="text-[#E11D48]"> might they use it? </span>
+          Where <span className="text-brand"> might they use it? </span>
         </h1>
         <p className="text-gray-600">
           Try to put as accurate a location as possible where the person may
@@ -23,7 +23,7 @@ const LocationForm = () => {
          <form className=" flex flex-col gap-4">
            <div className="flex flex-col ">
             <label htmlFor="location"  className="blocktext-md lg:text-lg font-medium text-gray-700 mb-2">
-                  Location name<span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">*</span> 
+                  Location name<span className="text-gradient-brand">*</span> 
                 </label>
                 <div className="flex items-center gap-2 px-4 py-3 border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-rose-500 focus-within:border-transparent">
           <input

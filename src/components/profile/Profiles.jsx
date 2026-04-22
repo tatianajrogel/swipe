@@ -39,7 +39,7 @@ const Profiles = () => {
         {/* Toggle Icon */}
         <button
           onClick={() => setShowMap(!showMap)}
-          className="text-gray-700 hover:text-rose-600 w-10 h-10 p-1.5 flex justify-center bg-white rounded-full border border-[#E11D48] transition-colors"
+          className="text-gray-700 hover:text-rose-600 w-10 h-10 p-1.5 flex justify-center bg-white rounded-full border border-brand transition-colors"
         >
           {showMap ? (
             <img src={listingIcon} alt="Listing" className="" />

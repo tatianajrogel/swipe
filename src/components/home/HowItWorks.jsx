@@ -3,9 +3,9 @@ import { howItWorksSteps } from "../../data/howItWorksData";
 
 const HowItWorks = () => {
   return (
-    <section className="py-16 max-w-6xl mx-auto px-4 text-[#333333]   bg-gradient-to-b from-indigo-100 to-purple-50 rounded-xl">
+    <section className="py-16 max-w-6xl mx-auto px-4 text-dark-subtle   bg-gradient-to-b from-indigo-100 to-purple-50 rounded-xl">
       <div className=" container mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient-brand">
           How does it work
         </h2>
 

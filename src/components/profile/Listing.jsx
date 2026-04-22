@@ -21,7 +21,7 @@ const Listing = () => {
       <div className="hidden absolute  inset-0 md:flex items-center justify-center">
         <Link to="/profileDetails">
           <button className="px-6 py-2 bg-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform">
-            <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">
+            <span className="text-gradient-brand">
               Buy now to see results
             </span>
           </button>

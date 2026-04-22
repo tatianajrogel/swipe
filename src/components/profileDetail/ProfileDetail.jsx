@@ -23,11 +23,11 @@ const ProfileDetail = ({ profile, images }) => {
       <div className="flex flex-col  space-y-4">
         <span className="w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-sm"><img src={arrowLeft} alt="Go back" /></span>
         <h2 className="text-2xl font-bold">{profile.name}</h2>
-        <p className="flex items-center gap-2 text-[#11181E]">
+        <p className="flex items-center gap-2 text-dark-primary">
           <span className="flex gap-1 items-center">♂ {profile.gender}  {profile.age}</span>
            <span className="flex gap-1 items-center"><img src={location} className="w-[12px] h-[16px]" alt="Location" /> {profile.location}</span>
         </p>
-        <p className="text-[#11181E] ">
+        <p className="text-dark-primary ">
           <span className="flex gap-1 items-center"><img src={capIcon} className="w-[16px] h-[16px]" alt="Job" />{profile.job} </span>
           </p>
 
@@ -45,7 +45,7 @@ const ProfileDetail = ({ profile, images }) => {
 
         {/* About */}
         <div className="flex flex-col gap-3">
-          <h3 className="font-semibold text-[#11181E] text-lg ">About</h3>
+          <h3 className="font-semibold text-dark-primary text-lg ">About</h3>
           <p className="text-slate-600 leading-relaxed ">{profile.about}</p>
         </div>
       </div>

@@ -15,9 +15,9 @@ const ProfileDetails = lazy(() => import("./pages/ProfileDetails"));
 
 const NotFound = () => (
   <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4">
-    <h1 className="text-6xl font-bold text-[#E11D48] mb-4">404</h1>
+    <h1 className="text-6xl font-bold text-brand mb-4">404</h1>
     <p className="text-xl text-slate-700 mb-8">Page not found.</p>
-    <a href="/" className="px-8 py-3 bg-gradient-to-r from-[#E11D48] to-[#A51CA9] text-white rounded-full font-semibold hover:shadow-lg transition-all">
+    <a href="/" className="px-8 py-3 bg-gradient-to-r from-brand to-brand-end text-white rounded-full font-semibold hover:shadow-lg transition-all">
       Go Home
     </a>
   </div>
@@ -27,7 +27,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Suspense fallback={<div className="flex items-center justify-center min-h-[60vh]"><div className="w-8 h-8 border-4 border-[#E11D48] border-t-transparent rounded-full animate-spin" /></div>}>
+      <Suspense fallback={<div className="flex items-center justify-center min-h-[60vh]"><div className="w-8 h-8 border-4 border-brand border-t-transparent rounded-full animate-spin" /></div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

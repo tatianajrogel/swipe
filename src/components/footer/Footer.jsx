@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
     { href: "https://facebook.com/", label: "Facebook", Icon: Facebook, color: "text-blue-600" },
     { href: "https://twitter.com/", label: "Twitter", Icon: Twitter, color: "text-sky-500" },
     { href: "https://linkedin.com/", label: "LinkedIn", Icon: Linkedin, color: "text-blue-700" },
-    { href: "https://instagram.com/", label: "Instagram", Icon: Instagram, color: "text-[#E11D48]" },
+    { href: "https://instagram.com/", label: "Instagram", Icon: Instagram, color: "text-brand" },
   ];
 
 const Footer = () => {
@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="text-2xl font-bold flex items-center gap-2 mb-6">
           <img src={logo} className="w-8 lg:w-9"  alt="DoTheySwipe logo" />
             <NavLink to="/" className="text-2xl md:text-5xl font-bold">
-              <span className="bg-gradient-to-r from-[#E11D48] to-[#A51CA9] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand to-brand-end bg-clip-text text-transparent">
                 DoTheySwipe
               </span>
             </NavLink>
@@ -37,8 +37,8 @@ const Footer = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `hover:text-[#E11D48] transition-colors ${
-                  isActive ? "text-[#E11D48]" : "text-black"
+                `hover:text-brand transition-colors ${
+                  isActive ? "text-brand" : "text-black"
                 }`
               }
             >
@@ -48,8 +48,8 @@ const Footer = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `hover:text-[#E11D48] transition-colors ${
-                  isActive ? "text-[#E11D48]" : "text-slate-950"
+                `hover:text-brand transition-colors ${
+                  isActive ? "text-brand" : "text-slate-950"
                 }`
               }
             >
@@ -59,8 +59,8 @@ const Footer = () => {
             <NavLink
               to="/faqs"
               className={({ isActive }) =>
-                `hover:text-[#E11D48] transition-colors ${
-                  isActive ? "text-[#E11D48]" : "text-slate-950"
+                `hover:text-brand transition-colors ${
+                  isActive ? "text-brand" : "text-slate-950"
                 }`
               }
             >
@@ -69,8 +69,8 @@ const Footer = () => {
 <NavLink
               to="/privacy-policy"
               className={({ isActive }) =>
-                `hover:text-[#E11D48] transition-colors ${
-                  isActive ? "text-[#E11D48]" : "text-slate-950"
+                `hover:text-brand transition-colors ${
+                  isActive ? "text-brand" : "text-slate-950"
                 }`
               }
             >
@@ -80,8 +80,8 @@ const Footer = () => {
            <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `hover:text-[#E11D48] transition-colors ${
-                  isActive ? "text-[#E11D48]" : "text-slate-950"
+                `hover:text-brand transition-colors ${
+                  isActive ? "text-brand" : "text-slate-950"
                 }`
               }
             >
@@ -92,7 +92,7 @@ const Footer = () => {
 
         {/* Copyright + Social Links */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-gray-300">
-          <p className="text-[#142546] mb-4 md:mb-0">
+          <p className="text-dark-footer mb-4 md:mb-0">
             © 2024 All Rights Reserved dotheyswipe.com
           </p>
 

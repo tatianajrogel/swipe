@@ -23,8 +23,8 @@ const toggleMenu = () => {
 
   // common classes for links
   const linkClasses = "transition-colors duration-300 font-medium";
-  const activeClasses = "text-[#E11D48]"; // highlighted link
-  const inactiveClasses = "text-[#121926] hover:text-[#E11D48]";
+  const activeClasses = "text-brand"; // highlighted link
+  const inactiveClasses = "text-dark-nav hover:text-brand";
 
   return (
     
@@ -40,7 +40,7 @@ const toggleMenu = () => {
       <div className="flex items-center pl-4 md:pl-0 ">
         <span className="text-2xl font-bold flex items-center gap-2">
           <img src={logo} className="w-8 lg:w-9" alt="DoTheySwipe logo" />
-          <span className="bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">
+          <span className="text-gradient-brand">
             DoTheySwipe
           </span>
         </span>
@@ -78,13 +78,13 @@ const toggleMenu = () => {
               className="px-5 py-2.5 rounded-full font-semibold transition-all duration-300 relative group overflow-hidden"
             >
               {/* Gradient border */}
-              <span className="absolute inset-0 bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] rounded-full"></span>
+              <span className="absolute inset-0 bg-gradient-brand rounded-full"></span>
 
               {/* White background */}
               <span className="absolute inset-0.5 bg-white rounded-full"></span>
 
               {/* Gradient text */}
-              <span className="relative bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">
+              <span className="relative text-gradient-brand">
                 Search on Tinder
               </span>
             </NavLink>
@@ -94,7 +94,7 @@ const toggleMenu = () => {
       {/* Mobile Menu + Search */}
       <div className="flex items-center space-x-4 pr-9 md:pr-0  md:hidden">
         <button aria-label="Search" className="text-xl">
-          <Search size={24} className="text-[#121926]" />
+          <Search size={24} className="text-dark-nav" />
         </button>
 
         {/* Hamburger */}
@@ -155,9 +155,9 @@ const toggleMenu = () => {
               className="px-5 py-3 rounded-full font-semibold transition-all duration-300 relative group overflow-hidden"
               onClick={() => setIsMenuOpen(false)}
             >
-              <span className="absolute inset-0 bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] rounded-full"></span>
+              <span className="absolute inset-0 bg-gradient-brand rounded-full"></span>
               <span className="absolute inset-0.5 bg-white rounded-full"></span>
-              <span className="relative flex justify-center bg-[linear-gradient(to_right,#E11D48,#CC1D6B,#B81C8B,#A51CA9)] bg-clip-text text-transparent">
+              <span className="relative flex justify-center text-gradient-brand">
                 Search on Tinder
               </span>
             </NavLink>
