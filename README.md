@@ -72,6 +72,7 @@ Open [http://localhost:5173](http://localhost:5173)
 ---
 
 ## Project Structure
+```
 DoTheySwipe/
 ├── public/
 ├── src/
@@ -94,7 +95,7 @@ DoTheySwipe/
 ├── index.html
 ├── vite.config.js
 └── package.json
-
+```
 ---
 
 ## Routes
